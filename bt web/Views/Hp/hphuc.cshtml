@@ -1,0 +1,200 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+<main>
+    <section>
+        <h1> Giỏ Hàng </h1>
+    </section>
+
+    <section class="d-flex">
+        <div class="section-left">
+            <div class="d-flex justify-content-center align-items-center section-left__slide__box">
+                <div class="section-left__slide">
+
+                </div>
+            </div>
+
+            <div class="p-3 d-flex justify-content-between section-left__nav">
+                <div class="section-left__nav__button">
+                    <form>
+                        <input id="selectionall" type="checkbox" />
+                        <span>  Tất cả </span>
+                    </form>
+                </div>
+
+                <div class="d-flex section-left__nav__items-boxes">
+                    <div class="section-left__nav__dongia">
+                        Đơn Giá
+                    </div>
+
+                    <div class="section-left__nav__soluong">
+                        Số lượng
+                    </div>
+
+                    <div class="section-left__nav__thanhtien">
+                        Thành tiền
+                    </div>
+
+                    <div class="section-left__nav__icon">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section-left__boxes">
+                <div class="p-3 d-flex flex-column section-left__box1">
+                    <div class="section-left__box1__button">
+                        <form>
+                            <input type="checkbox" class="selection" />
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            Gia Dụng Việt >
+                        </form>
+                    </div>
+
+                    <div class="d-flex justify-content-between section-left__box1__sanpham">
+                        <div class="d-flex align-items-start section-left__box1__sanpham__img">
+                            <img src="https://img.lovepik.com/free-png/20210928/lovepik-mobile-phone-png-image_401663651_wh1200.png" />
+                            <p class="ms-3"> Điện thoại samsung A71 8/256GB </p>
+
+                        </div>
+
+
+                        <div class="section-left__box1__sanpham__dongia">
+                            <span> 8.700.000 <sup>đ</sup></span>
+                        </div>
+
+                        <div class="section-left__box1__sanpham__soluong">
+                            <button onclick="PlusBtn1()"> + </button>
+                            <span class="numberbox1"> 1 </span>
+                            <button onclick="MinusBtn1()"> - </button>
+                        </div>
+
+                        <div class="section-left__box1__sanpham__thanhtien">
+                            <span> 8.400.000 <sup> đ </sup></span>
+                        </div>
+
+
+                        <div class="section-left__box1__sanpham__icon">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="section-left__box1__khuyenmai">
+                        Shop Khuyến Mãi
+                    </div>
+                </div>
+
+                <div class="p-3 section-left__box2">
+                    <div class="section-left__box2__button">
+                        <form>
+                            <input type="checkbox" class="selection" />
+                            <i class="fa-solid fa-bag-shopping"></i>
+                            Gia Dụng Việt >
+                        </form>
+                    </div>
+
+                    <div class="d-flex justify-content-between section-left__box2__sanpham">
+                        <div class="d-flex section-left__box2__sanpham__img">
+                            <img src="https://img.lovepik.com/free-png/20210928/lovepik-mobile-phone-png-image_401663651_wh1200.png" />
+                            <p class="ms-3"> Điện thoại samsung A71 8/256GB </p>
+                        </div>
+
+
+                        <div class="section-left__box2__sanpham__dongia">
+                            <span id="dongia_box2"> 8700000 <sup>đ</sup></span>
+                        </div>
+
+                        <div class="section-left__box2__sanpham__soluong">
+                            <button id="Plusbtn" onclick="PlusBtn2()"> + </button>
+                            <span class="numberbox2"> 0 </span>
+                            <button id="Minusbtn" onclick="MinusBtn2()"> - </button>
+                        </div>
+
+                        <div class="section-left__box2__sanpham__thanhtien">
+                            <span class="thanhtien_box2">
+                                1
+                                <sup> đ </sup>
+
+                            </span>
+                        </div>
+
+
+
+                        <div class="section-left__box2__sanpham__icon">
+                            <i class="fa-solid fa-trash-can"></i>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <div class="section-left__box2__khuyenmai">
+                        Shop Khuyến Mãi
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-right">
+            <div class="d-flex flex-column section-right__khuyenmai">
+                <div class="d-flex justify-content-between section-right__khuyenmai__title">
+                    <div class="section-right__khuyenmai__title">
+                        <p> Tiki Khuyến Mãi </p>
+                    </div>
+
+                    <div class="section-right__khuyenmai__cothechon">
+                        <p> Có thể chọn 2 </p>
+                    </div>
+                </div>
+
+                <div class="section-right__thanhtoan__img">
+                    <img src="https://simg.zalopay.com.vn/zlp-website/assets/web_720x720_624_HOAN_TIEN_K_GIOI_HAN_ebb26642f9.jpg" />
+                </div>
+
+                <div class="d-flex justify-content-center section-right__khuyenmai_khuyenmaititle">
+                    <a href="##">
+                        <i class="fa-solid fa-ticket"> </i>
+                    </a>
+                    <p> Chọn hoặc nhập mã khuyến mãi </p>
+                </div>
+            </div>
+
+            <div class="section-right__thanhtoan">
+                <div class="d-flex justify-content-between section-right__thanhtoan__tamtinh">
+                    <p> Tạm Tính </p>
+                    <span id="tamtinh"> 8.400.000Đ </span>
+                </div>
+
+                <hr />
+
+                <div class="d-flex justify-content-between section-right__thanhtoan__tongtien">
+                    <div class="d-flex section-right__thanhtoan__tinhtong">
+                        <p> Tongtien :  </p>
+
+                        <p>
+                            8.480.000 <sup> đ </sup>
+                        </p>
+
+                    </div>
+
+                    <div class="section-right__thanhtoan__freeship">
+                        <span> FREESHIP </span> đã được áp dụng
+
+
+                        <p>
+                            (Đã bao gồm VAT nếu có)
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-center align-items-center section-right__button">
+                <a href="##"> Mua Hàng (1) </a>
+            </div>
+
+        </div>
+    </section>
+</main>
+

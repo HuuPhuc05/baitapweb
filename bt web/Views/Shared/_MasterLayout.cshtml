@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    style>
+    header {
+    padding: 20px;
+    box-shadow: 1px 2px 3px 0px black;
+    margin: 10px 0;
+    }
+
+    .header__box {
+    position: relative;
+    }
+
+    .seach-box {
+    position: relative;
+    height: 100%;
+    }
+
+    .seach-box input {
+    width: 650px;
+    padding: 0 25px;
+    }
+
+
+
+    #search_icon {
+    position: absolute;
+    z-index: 3;
+    top: 6px;
+    left: 6px;
+    color: black;
+    }
+
+
+    #search-box-title {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 20px;
+    color: black;
+    text-decoration: none;
+    }
+
+    #search-box-title a {
+    color: black;
+    }
+
+    #search-box-title::before {
+    position: absolute;
+    width: 0.5px;
+    height: 100%;
+    background: red;
+    content: " ";
+    bottom: 0;
+    left: -10px;
+    }
+    .house-icon, .astra-icon, .taikhoan-icon, .shopping-cart {
+    padding: 0 10px;
+    }
+
+    .house-icon a, .astra-icon a, .taikhoan-icon a, .shopping-cart a {
+    padding: 0 2px;
+    color: black;
+    }
+
+    
+    nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0 2px;
+    }
+
+    
+
+    main {
+    background: rgb(245, 245, 250);
+    min-height: 100vh;
+    }
+
+    .section-left {
+    flex: 1.4;
+    }
+
+    .section-right {
+    flex: 0.6;
+    }
+
+    .section-left__slide__box {
+    background: white;
+    width: 100%;
+    height: 60px;
+    }
+
+    .section-left__slide {
+    height: 10px;
+    width: 100%;
+    background: lightgreen;
+    border-radius: 30px;
+    }
+
+    /* SECTION LEFT NAV */
+
+    .section-left__nav {
+    background: white;
+    margin: 10px 0;
+    }
+
+    .section-left__nav__items-boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 460px;
+    }
+
+    /* SECTION LEFT BOX-1 */
+
+
+    .section-left__box1 {
+    margin: 20px 0;
+    }
+
+    .section-left__box1, .section-left__box2 {
+    background: white;
+    height: 260px;
+    }
+
+
+    .section-left__box1__sanpham__img img, .section-left__box2__sanpham__img img {
+    width: 200px;
+    }
+
+    
+
+
+    .section-right {
+    margin: 0 10px;
+    height: 500px;
+    }
+
+    .section-right__thanhtoan__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    }
+
+    .section-right__thanhtoan__img img {
+    width: 200px;
+    }
+
+    
+
+    .section-right__khuyenmai {
+    height: 200px;
+    background: white;
+    padding: 10px;
+    }
+
+    .section-right__khuyenmai_khuyenmaititle {
+    margin: 10px 0;
+    position: relative;
+    z-index: 10;
+    }
+
+    .section-right__khuyenmai_khuyenmaititle a {
+    color: black;
+    }
+
+    .section-right__khuyenmai_khuyenmaititle i {
+    margin-top: 6px;
+    margin-right: 10px;
+    }
+
+    /* THANH TOAN */
+
+
+    .section-right__thanhtoan {
+    background: white;
+    margin: 10px 0;
+    padding: 10px;
+    }
+
+    .section-right__thanhtoan__tinhtong p {
+    margin: 0 4px;
+    }
+
+    /* BUTTON */
+
+    .section-right__button {
+    background: red;
+    height: 70px;
+    }
+
+    .section-right__button a {
+    color: white;
+    text-decoration: none;
+    }
+    </style>
+    <div class="container-fluid">
+        <header>
+            <div class="d-flex justify-content-between header__box">
+                <div class="seach-box">
+                    <a href="##">
+                        <i id="search_icon" class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <input type="search" placeholder="Giao Nhanh 2 gio" />
+
+                    <a class="d-flex" id="search-box-title" href="##">
+                        Tim Kiem
+                    </a>
+                </div>
+
+                <div class="d-flex header__icon_p">
+                    <div class="d-flex house-icon">
+                        <a href="##">
+                            <i class="fa-solid fa-house"></i>
+                        </a>
+
+                        <p> Trang Chu </p>
+                    </div>
+
+                    <div class="d-flex astra-icon">
+                        <a href="##">
+                            <i class="fa-solid fa-user-astronaut"></i>
+                        </a>
+
+                        <p> Astra </p>
+                    </div>
+
+                    <div class="d-flex taikhoan-icon">
+                        <a href="##">
+                            <i class="fa-regular fa-face-smile"></i>
+                        </a>
+                        <p> Tai Khoan </p>
+                    </div>
+
+                    <div class="shopping-cart">
+                        <a href="##">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="d-flex justify-content-between">
+                <div class="nav-title">
+                    <a href="##"> khỏe đẹp  </a>
+                    <a href="##"> Nhà cửa   </a>
+                    <a href="##"> Sách </a>
+                    <a href="##"> Thể thao </a>
+                    <a href="##"> Trái cây </a>
+                    <a href="##"> Thịt , trứng </a>
+                    <a href="##"> rau củ quả </a>
+                    <a href="##"> Sửa bơ phô mai </a>
+                    <a href="##"> Hải sản </a>
+                    <a href="##"> Gạo , Mì ăn liền </a>
+                </div>
+
+                <div class="Diachi">
+                    <i class="fa-solid fa-location-dot"></i>
+                    Giao đến : Q12 , P.Hiệp Thành , Hồ Chú Minh
+                </div>
+            </nav>
+        </header>
+            <div>
+                @RenderBody()
+            </div>
+        
+    </div>
+</body>
+</html>
+
+
+
+    
+
